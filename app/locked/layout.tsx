@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../globals.css";
 import { AppLockProvider } from "@/lib/providers/AppLockProvider";
 
 export const metadata = {

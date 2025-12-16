@@ -1,0 +1,8 @@
+export type AccountType = "CASH" | "BANK" | "E_WALLET";
+
+export interface Account {
+  id: string;
+  name: string;        // e.g. "BPI", "GCash"
+  type: AccountType;
+  createdAt: string;
+}
