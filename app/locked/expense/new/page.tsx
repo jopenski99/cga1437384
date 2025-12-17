@@ -38,7 +38,7 @@ export default function CostTrackingPage() {
     const total = expenses.reduce((s, e) => s + e.amount, 0);
 
     return (
-        <AppShell title="Expense" showBack>
+        <AppShell title="New Expense" showBack>
             <div className="p-4 space-y-4">
 
                 <label className="flex items-center gap-2 w-full">
