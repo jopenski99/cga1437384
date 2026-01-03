@@ -21,7 +21,6 @@ export default function ExpensePage() {
         load();
     }, []);
 
-    console.log("Expenses:", expenses);
     const { todayTotal, weekTotal, sorted } = useMemo(() => {
         const startOfWeek = new Date(today);
         startOfWeek.setDate(today.getDate() - 6);
@@ -73,7 +72,7 @@ export default function ExpensePage() {
                     </button>
                 </div>
                 {/* Expense List */}
-                <div className="max-h-96 overflow-y-scroll mt-38">
+                <div className="max-h-100 overflow-y-scroll mt-38">
                     {sorted.map(exp => (
                         <div
                             key={exp.id}
@@ -81,6 +80,7 @@ export default function ExpensePage() {
                         >
                             <div>
                                 <p className="font-medium">{exp.category}</p>
+                                <p className="text-sm"> {exp.description} </p>
                                 <p className="text-xs opacity-60">
                                     {new Date(exp.date).toLocaleDateString()}
                                 </p>
