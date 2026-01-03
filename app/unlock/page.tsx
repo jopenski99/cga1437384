@@ -15,6 +15,7 @@ export default function UnlockPage() {
 
     const success = await biometricUnlock();
     if (success) {
+      console.log("Biometric auth succeeded");
       unlock();
     } else {
       alert("Biometric authentication failed");

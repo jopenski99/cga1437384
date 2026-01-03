@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getEncryptedMasterKey } from "@/lib/storage/db";
 
-const APP_LOCK_DISABLED = true;
+const APP_LOCK_DISABLED = false;
 import { seedAccounts } from "@/lib/seeders/accounts";
 
 type AppLockContextType = {
