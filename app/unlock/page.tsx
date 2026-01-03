@@ -1,12 +1,18 @@
 "use client";
 
 import { useAppLock } from "@/lib/providers/AppLockProvider";
-import { biometricUnlock } from "@/lib/security/biometric";
+import { biometricUnlock, hasPasskey, setupPasskey } from "@/lib/security/biometric";
 
 export default function UnlockPage() {
   const { unlock } = useAppLock();
 
   async function handleBiometricUnlock() {
+
+    if (!hasPasskey()) {
+      const created = await setupPasskey();
+      if (!created) return;
+    }
+
     const success = await biometricUnlock();
     if (success) {
       unlock();
