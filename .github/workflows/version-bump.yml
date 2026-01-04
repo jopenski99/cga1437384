@@ -35,7 +35,7 @@ jobs:
 
       - name: Bump version
         run: |
-          npm version patch -m "chore(release): v%s"
+          npm version patch -m "released : v%s"
 
       - name: Push changes
         run: |

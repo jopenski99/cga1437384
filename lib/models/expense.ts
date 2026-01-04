@@ -11,6 +11,7 @@ export type ExpenseType =
   | "SCHOOL_PAYMENTS"
   | "HOUSE_CHORE_NEEDS"
   | "HOSPITAL_BILL"
+  | "MEDICINE"
   | "PC_NEEDS"
   | "MISC";
 
