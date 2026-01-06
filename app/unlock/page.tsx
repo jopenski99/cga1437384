@@ -85,7 +85,7 @@ export default function UnlockPage() {
         <span>ヨ</span> <span>ラ</span> <span>リ</span> <span>ル</span> <span>レ</span> <span>ロ</span> <span>ワ</span> <span>ヲ</span> <span>ン</span> <span>ガ</span > <span>ギ</span> <span>グ</span> <span>ゲ</span> <span>ゴ</span> <span>ザ</span> <span>ジ</span> <span>ズ</span> <span>ゼ</span> <span>ゾ</span> <span>ダ</span>
         <span>ヂ</span> <span>ヅ</span> <span>デ</span> <span>ド</span> <span>バ</span> <span>ビ</span> <span>ブ</span> <span>ベ</span> <span>ボ</span> <span>パ</span > <span>ピ</span> <span>プ</span> <span>ペ</span> <span>ポ</span> <span>ア</span> <span>イ</span> <span>ウ</span> <span>エ</span> <span>オ</span> <span>カ</span>
         <span>キ</span> <span>ク</span> <span>ケ</span> <span>コ</span> <span>サ</span> <span>シ</span> <span>ス</span> <span>セ</span> <span>ソ</span> <span>タ</span > <span>チ</span> <span>ツ</span> <span>テ</span> <span>ト</span> <span>ナ</span> <span>ニ</span> <span>ヌ</span> <span>ネ</span> <span>ノ</span> <span>ハ</span>
-        <span>ヒ</span> <span>フ</span> <span>ヘ</span> <span>ホ</span> <span>ア</span> <span>イ</span> <span>ウ</span> <span>エ</span> <span>オ</span> <span>カ</span > <span>キ</span> <span>ク</span> <span>ケ</span> <span>コ</span> <span>サ</span> <span>シ</span> <span>ス</span> <span>セ</span> <span>ソ</span> <span>タ</span>
+        <span>ヒ</span> <span>フ</span> <span>ヘ</span> <span>ホ</span> <span>ア</span> <span>K</span> <span>A</span> <span>エ</span> <span>A</span> <span>P</span > <span>P</span> <span>ク</span> <span>ケ</span> <span>コ</span> <span>サ</span> <span>シ</span> <span>ス</span> <span>セ</span> <span>ソ</span> <span>タ</span>
         <span>チ</span> <span>ツ</span> <span>テ</span> <span>ト</span> <span>ナ</span> <span>ニ</span> <span>ヌ</span> <span>ネ</span> <span>ノ</span> <span>ハ</span > <span>ヒ</span> <span>フ</span> <span>ヘ</span> <span>ホ</span> <span>マ</span> <span>ミ</span> <span>ム</span> <span>メ</span> <span>モ</span> <span>ヤ</span>
         <span>ユ</span> <span>ヨ</span> <span>ラ</span> <span>リ</span> <span>ル</span> <span>レ</span> <span>ロ</span> <span>ワ</span> <span>ヲ</span> <span>ン</span > <span>ガ</span> <span>ギ</span> <span>グ</span> <span>ゲ</span> <span>Y</span> <span>A</span> <span>W</span> <span>A</span> <span>ゼ</span> <span>ゾ</span>
         <span>ダ</span> <span>ヂ</span> <span>ヅ</span> <span>デ</span> <span>ド</span> <span>バ</span> <span>ビ</span> <span>ブ</span> <span>ベ</span> <span>ボ</span > <span>パ</span> <span>ピ</span> <span>プ</span> <span>ペ</span> <span>ポ</span> <span>ア</span> <span>イ</span> <span>ウ</span> <span>エ</span> <span>オ</span>
@@ -122,26 +122,27 @@ export default function UnlockPage() {
         <span>ポ</span> <span>ア</span> <span>イ</span> <span>ウ</span> <span>エ</span> <span>オ</span> <span>カ</span> <span>キ</span> <span>ク</span> <span>ケ</span> <span>コ</span> <span>サ</span> <span>シ</span> <span>ス</span> <span>セ</span> <span>ソ</span> <span>タ</span> <span>チ</span> <span>ツ</span> <span>テ</span>
         <span>ト</span> <span>ナ</span> <span>ニ</span> <span>ヌ</span> <span>ネ</span> <span>ノ</span> <span>ハ</span> <span>ヒ</span> <span>フ</span> <span>ヘ</span> <span>ホ</span>
       </div>
-      <div className="fixed text-center w-full z-50 w-auto " >
-        <div className="bg-black rounded-2xl p-6 inline-block mt-10 text-white">
+      <div className="fixed text-center w-full z-50 w-auto border-teal-400 rounded-2xl mt-10" style={{ backdropFilter: 'blur(3px)', border: '1px solid oklch(77.7% 0.152 181.912)' }}>
+        <div className=" rounded-2xl p-6 inline-block mt-5 text-white ">
           <h1 className="text-2xl font-bold mb-4">Asset Manager</h1>
 
           <button
             onClick={handleBiometricUnlock}
-            className="px-6 py-3 bg-black text-white rounded"
+            className="px-6 py-3 bg-black text-white rounded bg-teal-500  font-medium rounded-2xl"
           >
             Unlock with Biometrics
           </button>
-
-          <p className="text-sm mb-2 mt-5">
-            Install this app for a better experience 🚀
-          </p>
-          <button
-            onClick={handleInstall}
-            className="rounded-lg bg-white text-black px-4 py-2 text-sm font-medium"
-          >
-            Install App
-          </button>
+          <div className="flex items-center justify-between p-3">
+            <p className="text-sm mb-2 mt-5 w-1/2">
+              Install this app for a better experience 
+            </p>
+            <button
+              onClick={handleInstall}
+              className="rounded-lg bg-white text-black px-4 py-2 text-xs font-medium w-2/6 "
+            >
+              Install 🚀
+            </button>
+          </div>
         </div>
       </div>
 

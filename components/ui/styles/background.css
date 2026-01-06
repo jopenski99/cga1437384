@@ -13,6 +13,7 @@
   font-family: "Courier New", Courier, monospace;
   justify-content: center;
   align-content: center;
+  margin-top:25px;
 }
 
 .jp-matrix > span {
@@ -88,6 +89,19 @@
       0 0 15px #fff,
       0 0 20px #fff;
   }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .w-auto {
